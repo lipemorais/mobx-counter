@@ -14,8 +14,14 @@ class App extends Component {
   };
 
   render() {
+    const myStyle = {
+      display: "flex",
+      alignItems: "center",
+      flexDirection: "column"
+    };
+
     return (
-      <div className="App">
+      <div style={myStyle}>
         <span>{this.myState.counter}</span>
         <div>
           <button onClick={this.decrement}>decrementar</button>
